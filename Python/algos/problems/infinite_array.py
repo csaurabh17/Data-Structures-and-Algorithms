@@ -5,8 +5,9 @@ def find_chunk(lst, target):
     end = 1
 
     while target > lst[end]:
-        start = end + 1
-        end *=2
+        temp = end + 1
+        end = end + (end - start + 1) * 2
+        start = temp
 
     return [start, end]
 
@@ -41,4 +42,4 @@ def search_infinite_array(lst, item):
     return -1
 
 
-print(search_infinite_array([1, 3, 5, 6, 7, 56, 123, 1245, 15321], 1245))
+print(search_infinite_array([1, 3, 5, 6, 7, 56, 123, 1245, 15321, 21425151, 77777777, 88888888, 99999999 , 999999999999 ], 1245))
