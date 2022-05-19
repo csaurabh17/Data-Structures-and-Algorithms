@@ -26,6 +26,7 @@ def peak_elem(lst):
             end = mid - 1
         else:
             start = mid + 1
+    return -1
 
 
 def binary_search(lst, item, start, end):
