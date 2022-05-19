@@ -16,14 +16,16 @@ def search_elem(lst, target):
 def peak_elem(lst):
     start = 0
     end = int(len(lst) - 1)
-    while start < end:
+    while start <= end:
         mid = int(start + (end - start) / 2)
-        if lst[mid] < lst[mid + 1]:
+        if mid < end and lst[mid] > lst[mid + 1]:
+            return mid
+        elif mid > start and lst[mid] < lst[mid + 1]:
+            return mid - 1
+        elif lst[mid] <= lst[start]:
+            end = mid - 1
+        else:
             start = mid + 1
-        elif lst[mid] > lst[mid + 1]:
-            end = mid
-
-    return start
 
 
 def binary_search(lst, item, start, end):
