@@ -33,7 +33,7 @@ def display(board):
 
 def n_queens(board, row):
     # print(row, '------', len(board))
-    if row >= len(board) - 1:
+    if row == len(board):
         display(board)
         print("-------")
         return 1
