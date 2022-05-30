@@ -152,12 +152,29 @@ class LinkedList:
             before = temp
             temp = after
 
+    # https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+    def remove_duplicates(self):
+        if self.head is None:
+            return None
+        current_node = self.head
+        while current_node.next is not None:
+            next_elem = current_node.next
+            if current_node.value == next_elem.value:
+                current_node.next = current_node.next.next
+            current_node = current_node.next
+        return self
+
 
 new_ll = LinkedList(4)
 
 # testing append
-new_ll.append(3)
-new_ll.append(2)
+new_ll.append(5)
+new_ll.append(6)
+new_ll.append(7)
+new_ll.append(7)
+new_ll.append(8)
+new_ll.append(9)
+new_ll.append(9)
 # print(new_ll.tail.value)
 
 # printing post append
@@ -218,3 +235,8 @@ new_ll.append(2)
 # new_ll.print_list()
 # new_ll.reverse()
 # new_ll.print_list()
+
+# removing duplicates from sorted LL
+new_ll.print_list()
+new_ll.remove_duplicates()
+new_ll.print_list()
