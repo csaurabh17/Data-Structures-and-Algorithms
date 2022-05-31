@@ -164,6 +164,39 @@ class LinkedList:
             current_node = current_node.next
         return self
 
+    # merge 2 sorted linked lists
+    def merge(self, ll2):
+        if self.head is None:
+            return ll2
+        if ll2.head is None:
+            return self
+
+        final_list = None
+        temp1 = self.head
+        temp2 = ll2.head
+        if temp1.value < temp1.value:
+            final_list = LinkedList(temp1.value)
+            temp1 = temp1.next
+        else:
+            final_list = LinkedList(temp1.value)
+            temp2 = temp2.next
+        while temp1 is not None and temp2 is not None:
+            if temp1.value < temp2.value:
+                final_list.append(temp1.value)
+                temp1 = temp1.next
+            else:
+                final_list.append(temp2.value)
+                temp2 = temp2.next
+
+        while temp1 is not None:
+            final_list.append(temp1.value)
+            temp1 = temp1.next
+
+        while temp2 is not None:
+            final_list.append(temp2.value)
+            temp2 = temp2.next
+        return final_list
+
 
 new_ll = LinkedList(4)
 
@@ -237,6 +270,15 @@ new_ll.append(9)
 # new_ll.print_list()
 
 # removing duplicates from sorted LL
-new_ll.print_list()
-new_ll.remove_duplicates()
-new_ll.print_list()
+# new_ll.print_list()
+# new_ll.remove_duplicates()
+# new_ll.print_list()
+
+# for merging 2 sorted lists
+# new_ll_2 = LinkedList(4)
+# new_ll_2.append(5)
+# new_ll_2.append(6)
+# new_ll_2.append(7)
+# new_ll_2.append(14)
+# new_ll_2.append(20)
+# new_ll.merge(new_ll_2).print_list()
