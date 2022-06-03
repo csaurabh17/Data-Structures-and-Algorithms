@@ -2,7 +2,7 @@
 # [1, 3, 4, 5] - [1, 4, 5, 7] - Knapsack weight is 7
 
 # with memoization - assuming n constraint is 100 and size is 1000
-t = [[-1] * 22 for i in range(22)]
+t = [[-1] * 200 for i in range(200)]
 
 
 def find_max_profit(weight_arr, value_arr, size):
@@ -23,4 +23,5 @@ def find_max_profit(weight_arr, value_arr, size):
 
 
 print(find_max_profit([1, 4, 5, 7], [1, 3, 4, 5], 14))
+print(find_max_profit([10, 20, 30], [60, 100, 120], 50))
 
