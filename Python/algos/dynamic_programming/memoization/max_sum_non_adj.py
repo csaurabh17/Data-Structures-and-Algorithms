@@ -1,3 +1,5 @@
+# to find the maximum sum having non adjacent elements
+
 def max_sum(p, arr):
     if not arr:
         return p
@@ -10,3 +12,4 @@ def max_sum(p, arr):
 
 
 print(max_sum(0, [1, 4, 7, 10, 11]))
+print(max_sum(0, [2, 3, 2]))
