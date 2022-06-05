@@ -27,5 +27,5 @@ def permutations_count(processed, unprocessed):
     return count
 
 
-permutations("", "abcd")
+# permutations("", "abcd")
 print(permutations_count("", "abcd"))
