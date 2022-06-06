@@ -33,3 +33,4 @@ def total_units_stored(arr):
 
 
 print(total_units_stored([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))
+print(total_units_stored([1, 0, 8, 0, 6, 0, 2, 0, 5, 0, 4, 0, 8, 0, 3, 0, 7]))
