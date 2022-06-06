@@ -1,5 +1,5 @@
-# https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-# Amazon D-E-Shaw Directi Flipkart Goldman Sachs Intuit MakeMyTrip Microsoft Ola Cabs Oracle Paytm Pubmatic Quikr Salesforce Sapient Swiggy Walmart Media.net Google
+# https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ Amazon D-E-Shaw Directi Flipkart Goldman Sachs
+# Intuit MakeMyTrip Microsoft Ola Cabs Oracle Paytm Pubmatic Quikr Salesforce Sapient Swiggy Walmart Media.net Google
 
 class Solution:
     def maxProfit(self, prices) -> int:
