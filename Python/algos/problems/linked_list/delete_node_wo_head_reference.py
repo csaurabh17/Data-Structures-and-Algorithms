@@ -8,8 +8,8 @@ class ListNode:
 class Solution:
     def solve(self, node):
         temp = node.value
-        node.value = node.next.value
-        node.next = node.next.next
+        self.node.value = node.next.value
+        self.node.next = self.node.next.next
         node.next.next = None
         node.next = None
         return node
