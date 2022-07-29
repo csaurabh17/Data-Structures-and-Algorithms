@@ -12,7 +12,7 @@ class BinaryTree:
         self.root = None
 
     def inorder(self, new_node):
-        self.pre_order(new_node.left)
+        self.inorder(new_node.left)
         print(new_node)
-        self.pre_order(new_node.right)
-
+        self.inorder(new_node.right)
+        return

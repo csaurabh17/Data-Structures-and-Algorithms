@@ -1,4 +1,4 @@
-# Finding duplicate numbers in array [1,n] using cycle sort
+# Finding duplicate numbers in array [1,node] using cycle sort
 
 def swap(lst, i, j):
     tmp = lst[i]

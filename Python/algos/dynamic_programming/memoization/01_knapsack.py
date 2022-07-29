@@ -1,7 +1,7 @@
 # Solving 0-1 Knapsack
 # [1, 3, 4, 5] - [1, 4, 5, 7] - Knapsack weight is 7
 
-# with memoization - assuming n constraint is 100 and size is 1000
+# with memoization - assuming node constraint is 100 and size is 1000
 t = [[-1] * 200 for i in range(200)]
 
 

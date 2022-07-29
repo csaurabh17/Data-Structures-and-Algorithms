@@ -1,4 +1,4 @@
-# find duplicate number in  list in O(n) from range 1 to n
+# find duplicate number in  list in O(node) from range 1 to node
 # [3,5,2,1,4]
 
 def swap(lst, i, j):

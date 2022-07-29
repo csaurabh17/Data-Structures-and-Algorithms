@@ -1,5 +1,5 @@
 # Find maximum height pyramid from the given array of objects
-# Given n objects, with each object has width wi. We need to arrange them in a pyramidal way such that :
+# Given node objects, with each object has width wi. We need to arrange them in a pyramidal way such that :
 #
 #
 # Total width of ith is less than (i + 1)th.

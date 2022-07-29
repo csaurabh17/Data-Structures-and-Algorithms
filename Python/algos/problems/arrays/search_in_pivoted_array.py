@@ -1,6 +1,6 @@
-# An element in a sorted array can be found in O(log n) time via binary search. But suppose we rotate an ascending
+# An element in a sorted array can be found in O(log node) time via binary search. But suppose we rotate an ascending
 # order sorted array at some pivot unknown to you beforehand. So for instance, 1 2 3 4 5 might become 3 4 5 1 2.
-# Devise a way to find an element in the rotated array in O(log n) time. Microsoft Google Adobe Amazon D-E-Shaw
+# Devise a way to find an element in the rotated array in O(log node) time. Microsoft Google Adobe Amazon D-E-Shaw
 # Flipkart Hike Intuit MakeMyTrip Paytm
 
 def binary_search(lst, item, start, end):

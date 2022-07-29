@@ -1,4 +1,4 @@
-# finding missing number in [0,n] array using cyclic sort
+# finding missing number in [0,node] array using cyclic sort
 # [3, 0, 1]
 
 def swap(lst, i, j):

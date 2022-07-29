@@ -1,4 +1,4 @@
-# solving n queens problem in a given X BY X matrix
+# solving node queens problem in a given X BY X matrix
 
 def is_safe(board, row, col):
     # for upper

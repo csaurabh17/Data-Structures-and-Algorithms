@@ -1,6 +1,6 @@
-# Fibonacci series up till n using recursion
+# Fibonacci series up till node using recursion
 
-# assuming n = 4, output will be [0,1,1,2,3]
+# assuming node = 4, output will be [0,1,1,2,3]
 
 def fibonacci(n):
     if n < 2:

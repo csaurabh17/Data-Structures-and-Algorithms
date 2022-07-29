@@ -1,6 +1,6 @@
-# Given a set of n integers, divide the set in two subsets of n/2 sizes each such that the difference of the sum of
-# two subsets is as minimum as possible. If n is even, then sizes of two subsets must be strictly n/2 and if n is
-# odd, then size of one subset must be (n-1)/2 and size of other subset must be (n+1)/2.
+# Given a set of node integers, divide the set in two subsets of node/2 sizes each such that the difference of the sum of
+# two subsets is as minimum as possible. If node is even, then sizes of two subsets must be strictly node/2 and if node is
+# odd, then size of one subset must be (node-1)/2 and size of other subset must be (node+1)/2.
 import sys
 
 ans = ""

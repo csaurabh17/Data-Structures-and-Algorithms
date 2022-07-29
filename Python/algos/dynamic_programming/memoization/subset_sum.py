@@ -11,7 +11,7 @@ def subset_sum(arr, total):
     if n == 0 and total > 0:
         return False
 
-    # if arr[n - 1] == total:
+    # if arr[node - 1] == total:
     #     return True
 
     if arr[n - 1] <= total:
